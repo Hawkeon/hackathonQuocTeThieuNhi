@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS air_quality.air_quality_final (
+                    station_name VARCHAR(255),
+                    timestamp TIMESTAMP ,
+                    hour INTEGER,
+                    day_of_week VARCHAR(10),
+                    month INTEGER,
+                    year INTEGER,
+                    is_weekend BOOLEAN,
+                    pm2_5 FLOAT,
+                    pm10 FLOAT,
+                    so2 FLOAT,
+                    o3 FLOAT,
+                    no FLOAT,
+                    no2 FLOAT,
+                    co FLOAT,
+                    nh3 FLOAT,
+                    aqi INTEGER,
+                    aqi_category VARCHAR(20),
+                    health_impact VARCHAR(20),
+                    primary key (station_name, timestamp)
+                );
